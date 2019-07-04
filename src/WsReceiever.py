@@ -16,13 +16,13 @@ MARKET_INFO_URL = "https://api.upbit.com/v1/market/all"
 WSS_URL = "wss://api.upbit.com/websocket/v1"
 
 
-class WsReciever :
+class WsReceiever :
     def __init__(self) :
         self._nowDt = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         self._connRedis = redis.StrictRedis( host='localhost', port=6379, db=0)
 
     def run( self) :
-        print( "[WsReciever.run() started] datetime : %s" % ( self._nowDt))
+        print( "[WsReceiever.run() started] datetime : %s" % ( self._nowDt))
 
         marketList = self.getMarketList()
         info = [ {"ticket":"test"}
@@ -56,5 +56,5 @@ class WsReciever :
         return re
 
 if __name__=="__main__" :
-    WsReciever().run()
+    WsReceiever().run()
 
