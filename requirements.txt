@@ -1,4 +1,5 @@
 amqp==2.4.2
+appnope==0.1.0
 asn1crypto==0.24.0
 attrs==18.2.0
 backcall==0.1.0
@@ -14,6 +15,7 @@ decorator==4.3.2
 defusedxml==0.5.0
 entrypoints==0.3
 Flask==1.0.2
+Flask-SocketIO==4.0.0
 idna==2.8
 ipykernel==5.1.0
 ipython==7.3.0
@@ -50,6 +52,8 @@ Pygments==2.3.1
 PyJWT==1.7.1
 pyrsistent==0.14.11
 python-dateutil==2.8.0
+python-engineio==3.7.0
+python-socketio==4.0.3
 pytz==2018.9
 pyzmq==18.0.0
 qtconsole==4.4.3
